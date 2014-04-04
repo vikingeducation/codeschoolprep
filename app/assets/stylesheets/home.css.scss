@@ -6,7 +6,7 @@ $section-buffer: 40px;
 body{
   a{
     text-decoration: none;
-    color: black;
+    color: inherit;
   }
   a:hover{
     color: #ccf;
@@ -87,10 +87,19 @@ p{
 
 /* ----------------- */
 
+/* MISC STYLES */
+.clearfix{
+  clear: both;
+  margin:0;
+}
+/* ----------------- */
+
 /* HOME PAGE STYLES */
 
 .section{
   border-bottom: 1px solid #eee;
+  position: relative;
+  clear: both;
 }
 
 #home-page{
@@ -99,6 +108,9 @@ p{
 
     height: 80px;
     border-bottom: 1px solid #eee;
+    // background-color: #304350;
+    background: image-url('patterns/dk-blue-hatch.png');
+    color: white!important;
 
     .nav-logo{
       display: inline-block;
@@ -166,7 +178,42 @@ p{
     }
   }
 
+  #goals{
+    padding: $section-buffer 0px;
+    .goal{
+      display: block;
+      width: 90%;
+      margin: 30px auto;
+      // clear: both;s
+      .goal-text{
+        width: 40%;
+        height: 150px;
+        margin: 0 3%;
+        p{
+          margin: 10px;
+        }
+      }
+      .goal-image{
+        width: 40%;
+        height: 150px;
+        margin: 0 3%;
+      }
+      .float-left{
+        float: left;
+        // margin: 0 2% 0 5%;
+      }
+      .float-right{
+        float: left; //HA!
+        // margin: 0 5% 0 2%;
+      }
+      img{
+        border: 1px solid gray;
+        height: 100%;
+        width: 100%;
+      }
+    }
 
+  }
 
 
 }
