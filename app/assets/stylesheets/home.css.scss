@@ -19,7 +19,7 @@ $color-highlight-border: #0279C2;
 body{
   a{
     text-decoration: none;
-    color: inherit;
+    color: blue;
   }
   a:hover{
     color: #ccf;
@@ -39,7 +39,7 @@ h1{
 }
 h2{
   font-family: $font-headline;
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 500;
   line-height: 1.25em;
 }
@@ -62,6 +62,9 @@ h5{
 p{
   font-size: 1rem;
   line-height: 1.25em;
+}
+p+p{
+  margin-top: .5em;
 }
 /* used to prevent flashing when web fonts load */
 .wf-loading {
@@ -101,6 +104,14 @@ p{
 /* ----------------- */
 
 /* MISC STYLES */
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container-narrow{
+  @extend .container;
+  max-width: 900px;
+}
 .clearfix{
   clear: both;
   margin:0;
@@ -124,6 +135,10 @@ p{
     // background-color: #304350;
     background: image-url('patterns/dk-blue-hatch.png');
     color: white!important;
+
+    a{
+      color: inherit;
+    }
 
     .nav-logo{
       display: inline-block;
@@ -288,5 +303,27 @@ p{
     }
   }
 
+  #instructor{
+    padding: $section-buffer 0px;
+    h2{
+      text-align: center;
+    }
+    strong{
+      font-size: 1.25em;
+    }
+    .info-box{
+      padding: 40px 0;
+      img{
+        width: 200px;
+        height: 200px;
+        margin: 0px 20px;
+        float: left;
+      }
+      p{
+        font-size: 1.15em;
+        // margin: 1em;
+      }
+    }
+  }
 
 }
