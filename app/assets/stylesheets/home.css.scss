@@ -1,7 +1,7 @@
 
 $font-headline: Lato, Helvetica, sans-serif;
 $font-body: "helvetica neue", Helvetica, sans-serif;
-
+$section-buffer: 40px;
 
 body{
   a{
@@ -22,27 +22,33 @@ h1{
   font-family: $font-headline;
   font-size: 3rem;
   font-weight: 500;
+  line-height: 1.25em;
 }
 h2{
   font-family: $font-headline;
   font-size: 2rem;
   font-weight: 500;
+  line-height: 1.25em;
 }
 h3{
   font-family: $font-headline;
   font-size: 1.5rem;
   font-weight: 400;
+  line-height: 1.25em;
 }
 h4{
   font-size: 1.25rem;
   font-weight: 400;
+  line-height: 1.25em;
 }
 h5{
   font-size: 1rem;
   font-weight: 400;
+  line-height: 1.25em;
 }
 p{
   font-size: 1rem;
+  line-height: 1.25em;
 }
 /* used to prevent flashing when web fonts load */
 .wf-loading {
@@ -125,6 +131,7 @@ p{
     h1{
       margin: 80px auto 30px;
       text-align: center;
+      line-height: 1.1em;
     }
     h3{
       margin: 0px auto;
@@ -139,10 +146,25 @@ p{
       margin: 40px auto 80px;
       display: block;
     }
-
   }
 
+  #reinforcer{
+    padding: $section-buffer*2 0px;
+    background: image-url('patterns/dk-blue-hatch.png');
+    color: white;
 
+    h3{
+      width: 80%;
+      margin: auto;
+      font-size: 1.75rem;
+    }
+    p{
+      width: 75%;
+      font-size: 1.25rem ;
+      margin: 20px auto;
+      font-weight: 100;
+    }
+  }
 
 
 
