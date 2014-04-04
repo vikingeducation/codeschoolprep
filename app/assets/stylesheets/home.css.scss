@@ -1,0 +1,89 @@
+
+$font-headline: Lato, Helvetica, sans-serif;
+$font-body: "helvetica neue", Helvetica, sans-serif;
+
+
+body{
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: #ccf;
+  }
+}
+
+/* FONT HIERARCHY */
+body{
+  font-family: $font-body;
+  color: #333;
+}
+h1{
+  font-family: $font-headline;
+}
+h2{
+  font-family: $font-headline;
+}
+h3{
+  font-family: $font-headline;
+}
+h4{
+
+}
+h5{
+
+}
+p{
+
+}
+/* used to prevent flashing when web fonts load */
+.wf-loading {
+  font-family: "droid-sans";
+  visibility: hidden;
+}
+.wf-active {
+  visibility: visible;
+  }
+/* ----------------- */
+
+#home-page{
+
+  #topnav{
+
+    height: 80px;
+    border-bottom: 1px solid #eee;
+
+    .nav-logo{
+      display: inline-block;
+      width: 20%;
+      h1{
+        display: inline-block;
+        font-size: 20px;
+        padding: 30px 20px;
+      }
+    }
+    .nav-links{
+      display: inline-block;
+      // margin: 0px auto;
+      width: 60%;
+    }
+    ul{
+      list-style-type: none;
+    }
+    li{
+      display: inline-block;
+      width: 16%;
+      text-align: center;
+    }
+
+  }
+
+
+  
+
+
+
+
+
+
+}
