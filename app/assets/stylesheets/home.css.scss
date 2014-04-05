@@ -14,6 +14,7 @@ $section-buffer: 40px;
 /* COLORS */
 $color-highlight: #0298F5;
 $color-highlight-border: #0279C2;
+$color-blue-green: #304350;
 /* --------------- */
 
 body{
@@ -316,13 +317,30 @@ p+p{
       img{
         width: 200px;
         height: 200px;
-        margin: 0px 20px;
+        margin: 0px 40px;
         float: left;
       }
       p{
         font-size: 1.15em;
         // margin: 1em;
       }
+    }
+  }
+
+  #faq{
+    padding: $section-buffer 0px;
+    h2{
+      text-align: center;
+    }
+    h4{
+      font-weight: 700;
+      color: $color-blue-green;
+    }
+    p{
+      margin: 1em 0;
+    }
+    .faq-question{
+      margin: 40px;
     }
   }
 
