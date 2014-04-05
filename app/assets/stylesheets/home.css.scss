@@ -63,6 +63,7 @@ h5{
 p{
   font-size: 1rem;
   line-height: 1.25em;
+  font-weight: 300;
 }
 p+p{
   margin-top: .5em;
@@ -100,7 +101,11 @@ p+p{
     width: 200px;
     height: 50px;
   }
+  &:hover{
+    background-color: $color-highlight-border;;
+  }
 }
+
 
 /* ----------------- */
 
@@ -136,6 +141,7 @@ p+p{
     // background-color: #304350;
     background: image-url('patterns/dk-blue-hatch.png');
     color: white!important;
+    position: relative;
 
     a{
       color: inherit;
@@ -143,31 +149,38 @@ p+p{
 
     .nav-logo{
       display: inline-block;
-      width: 20%;
+      position: absolute;
+      max-width: 300px;
       h1{
         display: inline-block;
         font-size: 20px;
-        padding: 30px 30px;
+        padding: 25px 50px;
       }
     }
     .nav-links{
-      display: inline-block;
-      // margin: 0px auto;
-      width: 60%;
+      position: absolute;
+      right: 0;
+      margin-right: 50px;
+      padding: 30px 0;
     }
     ul{
       list-style-type: none;
     }
     li{
       display: inline-block;
-      width: 16%;
+      padding: 0 10px;
       text-align: center;
+      font-weight: 200;
+      &:hover{
+        color: #def;
+      }
     }
 
   }
 
 
   #hero-unit{
+    padding: $section-buffer/2 0px;
 
     h1{
       margin: 80px auto 30px;
@@ -341,6 +354,70 @@ p+p{
     }
     .faq-question{
       margin: 40px;
+    }
+  }
+
+  #contact{
+    padding: $section-buffer*2 0px;
+    // background: image-url('patterns/dk-blue-hatch.png');
+    // color: white;
+
+    h2{
+      text-align: center;
+    }
+    h4{
+      max-width: 500px;
+      margin: 30px auto;
+      text-decoration: italic;
+      font-weight: 300;
+    }
+    form{
+      display: block;
+      max-width: 500px;
+      margin: auto;
+    }
+    .input{
+      display: block;
+      margin: 30px auto;
+      position: relative;
+    }
+    .required:before{
+      // color: white;
+      font-size: 1.5em;
+      position: absolute;
+      left: -20px;
+      content:"*";
+    }
+    input{
+      font-size: 1.5rem;
+      width: 500px;
+      height: 30px;
+      padding: 5px 15px;
+    }
+    textarea{
+      font-size: 1.5rem;
+      width: 500px;
+      height: 200px;
+      padding: 5px 15px;
+    }
+    input[type="submit"]{
+      @extend .button;
+      width: 532px;
+      height: 60px;
+      padding: 5px 15px;
+      color: white;
+    }
+
+  }
+
+  footer{
+    padding: $section-buffer 0px;
+    background: image-url('patterns/dk-blue-hatch.png');
+    .copyright{
+      display: inline-block;
+      margin-left: 40px;
+      color: white;
+      font-weight: 100; 
     }
   }
 
