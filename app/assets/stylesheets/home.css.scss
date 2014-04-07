@@ -214,7 +214,8 @@ p+p{
     }
     p{
       width: 75%;
-      font-size: 1.25rem ;
+      font-size: 1.5rem;
+      line-height: 1.35em;
       margin: 20px auto;
       font-weight: 100;
     }
@@ -282,14 +283,27 @@ p+p{
       margin: 0 auto;
       position: relative;
       overflow: hidden;
+      color: #888;
       h4{
         text-align: center;
         margin: 10px 0;
+        color: $color-blue-green;
       }
       p{
         // font-size: .85rem;
         line-height: 1.15em;
       }
+      ul{
+        margin-left: 25px;
+      }
+      li{
+        line-height: 1.15em;
+        font-weight: 100;
+        font-size: 1.35rem;
+      }
+      li+li{
+        margin-top: .5rem;
+      } 
     }
     .curr-diagram{
       height: 200px;
@@ -304,6 +318,7 @@ p+p{
     .card-back{
       // display: none;
       width: 180px;
+      height: 150px;
       padding: 25px;
       position: absolute;
       top: 0px;
@@ -326,14 +341,17 @@ p+p{
       text-align: center;
       margin: 40px 0;
       font-size: 1.75rem;
-      color: #999;
+      // text-decoration: underline;
+      color: $color-blue-green;
+      font-weight: bold;
     }
     .subheading{
       width: 800px;
       margin: 30px auto;
       p{
         font-size: 1.25rem;
-
+        color: #888;
+        font-weight: 300;
       }
     }
     .card-holder{
@@ -361,7 +379,7 @@ p+p{
     .card-front{
       // padding: 20px;
       img{
-        margin: 0 20px;
+        margin: 0 20px 0 30px;
         height: 110px;
         width: 110px;
         border: 1px solid gray;
@@ -378,15 +396,16 @@ p+p{
       // display: none;
       width: 400px;
       height: 150px;
-      padding: 25px;
+      // padding: 25px;/
       position: absolute;
       top: 0px;
-      left: -450px;
+      left: -390px;
       color: white;
       background-color: $color-highlight;
       p{
         font-size: 1.25rem;
         font-weight: 100;
+        margin: 25px;
       }
     }
   }
@@ -398,18 +417,22 @@ p+p{
     }
     strong{
       font-size: 1.25em;
+      font-weight: 500;
+      color: $color-blue-green;
     }
     .info-box{
-      padding: 40px 0;
+      padding: 60px 0;
       img{
         width: 200px;
         height: 200px;
-        margin: 0px 40px;
+        margin: 0px 40px 20px 60px;
         float: left;
       }
       p{
-        font-size: 1.15em;
+        font-size: 1.35em;
         // margin: 1em;
+        color: #666;
+        margin-left: 60px;
       }
     }
   }
