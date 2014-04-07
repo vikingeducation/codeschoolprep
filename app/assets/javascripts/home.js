@@ -4,24 +4,40 @@
 $(function(){
 
   // set listeners for curriculum pieces
-  week = $("#home-page #curriculum .week-wrapper");
+  week = $("#home-page #curriculum .card-wrapper");
   week.on("mouseenter",".week",function(e){
     $target = $(e.target);
-    // console.log($target);
-    // console.log("nobubble");
-    $weekBack = $target.parents(".week-wrapper").find(".week-back");
+    $weekBack = $target.parents(".card-wrapper").find(".card-back");
     $weekBack.animate({
       left: 0
     },200);
   });
   week.on("mouseleave",".week",function(e){
     $target = $(e.target);
-    // console.log($target);
-    // console.log("nobubble");
-    $weekBack = $target.parents(".week-wrapper").find(".week-back");
+    $weekBack = $target.parents(".card-wrapper").find(".card-back");
     $weekBack.clearQueue();
     $weekBack.animate({
       left: -$weekBack.outerWidth()
+    },200);
+  })
+
+
+  // set listeners for how-it-works pieces
+  card = $("#home-page #how-it-works .card-wrapper");
+  card.on("mouseenter",".how-card",function(e){
+    console.log("HI")
+    $target = $(e.target);
+    $cardBack = $target.parents(".card-wrapper").find(".card-back");
+    $cardBack.animate({
+      left: 0
+    },200);
+  });
+  card.on("mouseleave",".how-card",function(e){
+    $target = $(e.target);
+    $cardBack = $target.parents(".card-wrapper").find(".card-back");
+    $cardBack.clearQueue();
+    $cardBack.animate({
+      left: -$cardBack.outerWidth()
     },200);
   })
 

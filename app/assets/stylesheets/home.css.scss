@@ -9,7 +9,7 @@
 
 $font-headline: Lato, Helvetica, sans-serif;
 $font-body: "helvetica neue", Helvetica, sans-serif;
-$section-buffer: 40px;
+$section-buffer: 80px;
 
 /* COLORS */
 $color-highlight: #0298F5;
@@ -40,7 +40,7 @@ h1{
 }
 h2{
   font-family: $font-headline;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.25em;
 }
@@ -180,7 +180,7 @@ p+p{
 
 
   #hero-unit{
-    padding: $section-buffer/2 0px;
+    padding: 20px 0px;
 
     h1{
       margin: 80px auto 30px;
@@ -203,7 +203,7 @@ p+p{
   }
 
   #reinforcer{
-    padding: $section-buffer*2 0px;
+    padding: $section-buffer 0px;
     background: image-url('patterns/dk-blue-hatch.png');
     color: white;
 
@@ -221,7 +221,7 @@ p+p{
   }
 
   #goals{
-    padding: $section-buffer 0px;
+    padding: $section-buffer/2 0px;
     .goal{
       display: block;
       width: 90%;
@@ -270,15 +270,15 @@ p+p{
       margin: 30px auto;
       padding-left: 100px;
     }
-    .week-wrapper{
+    .card-wrapper{
       width: 33%;
       float: left;
     }
     .week{
       width: 200px;
       height: 150px;
-      border: 1px solid gray;
-      padding: 15px; //set for week-back too
+      border: 1px solid #ddd;
+      padding: 15px; //set for card-back too
       margin: 0 auto;
       position: relative;
       overflow: hidden;
@@ -301,13 +301,87 @@ p+p{
     .weeks-top{
 
     }
-    .week-back{
+    .card-back{
       // display: none;
       width: 180px;
       padding: 25px;
       position: absolute;
       top: 0px;
       left: -230px;
+      color: white;
+      background-color: $color-highlight;
+      p{
+        font-size: 1.25rem;
+        font-weight: 100;
+      }
+    }
+  }
+
+  #how-it-works{
+    padding: $section-buffer 0px;
+    h2{
+    text-align:center;
+    }
+    h3{
+      text-align: center;
+      margin: 40px 0;
+      font-size: 1.75rem;
+      color: #999;
+    }
+    .subheading{
+      width: 800px;
+      margin: 30px auto;
+      p{
+        font-size: 1.25rem;
+
+      }
+    }
+    .card-holder{
+      width: 1000px;
+      margin: auto;
+    }
+    .how-content{
+      width: 500px;
+      // display: inline-block;
+      float: left;
+    }
+    .how-support{
+      width: 500px;
+      // display: inline-block;
+      float: left;
+    }
+    .how-card{
+      width: 400px;
+      margin: 30px auto;
+      height: 150px;
+      border: 1px solid #ddd;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-front{
+      // padding: 20px;
+      img{
+        margin: 0 20px;
+        height: 110px;
+        width: 110px;
+        border: 1px solid gray;
+        float: left;
+      }
+      h4{
+        margin: 20px;
+        font-size: 1.5rem;
+        // padding-top: 1em;
+        font-weight: 300;
+      }
+    }
+    .card-back{
+      // display: none;
+      width: 400px;
+      height: 150px;
+      padding: 25px;
+      position: absolute;
+      top: 0px;
+      left: -450px;
       color: white;
       background-color: $color-highlight;
       p{
@@ -358,7 +432,7 @@ p+p{
   }
 
   #contact{
-    padding: $section-buffer*2 0px;
+    padding: $section-buffer 0px;
     // background: image-url('patterns/dk-blue-hatch.png');
     // color: white;
 
