@@ -68,6 +68,14 @@ p{
 p+p{
   margin-top: .5em;
 }
+li{
+  font-size: 1rem;
+  line-height: 1.25em;
+  margin: 1em 0;
+}
+ol, ul{
+  margin-left: 2em;
+}
 /* used to prevent flashing when web fonts load */
 .wf-loading {
   font-family: "droid-sans";
@@ -114,9 +122,13 @@ p+p{
   max-width: 1200px;
   margin: 0 auto;
 }
+.container-medium{
+  @extend .container;
+  max-width: 1000px;
+}
 .container-narrow{
   @extend .container;
-  max-width: 900px;
+  max-width: 800px;
 }
 .clearfix{
   clear: both;
@@ -171,6 +183,7 @@ p+p{
       padding: 0 10px;
       text-align: center;
       font-weight: 200;
+      margin: 0;
       &:hover{
         color: #def;
       }
@@ -300,6 +313,7 @@ p+p{
         line-height: 1.15em;
         font-weight: 100;
         font-size: 1.35rem;
+        margin: 0;
       }
       li+li{
         margin-top: .5rem;
@@ -508,7 +522,7 @@ p+p{
   }
 
   footer{
-    padding: $section-buffer 0px;
+    padding: 40px 0px;
     background: image-url('patterns/dk-blue-hatch.png');
     .copyright{
       display: inline-block;
