@@ -291,21 +291,23 @@ ol, ul{
     }
     .weeks-top{
       width: 80%;
-      margin: 30px auto;
+      margin: 50px auto 30px;
     }
     .weeks-bottom{
       width: 80%;
       margin: 30px auto;
-      padding-left: 100px;
+      padding-left: 150px;
     }
     .card-wrapper{
       width: 33%;
       float: left;
+      position: relative;
     }
     .week{
       width: 200px;
       height: 150px;
       border: 1px solid #ddd;
+      background: #eee;
       padding: 15px; //set for card-back too
       margin: 0 auto;
       position: relative;
@@ -334,14 +336,54 @@ ol, ul{
       } 
     }
     .curr-diagram{
-      height: 200px;
+      height: 150px;
       width: 800px;
       margin: 50px auto;
-      border: 1px solid gray;
+      padding: 0px 0 0 40px;
+      position: relative;
+      // border: 1px solid gray;
       display: block;
+      .img-piece{
+        display: inline-block;
+        img{
+          margin: -2px;
+          padding: 2px;
+        }
+      }
     }
-    .weeks-top{
-
+    .curr-line{
+      position: absolute;
+      width: 0;
+      border: 1px solid #ddd;
+    }
+    .curr-line-top{
+      // height: 188px;
+      top: -50px;
+    }
+    .curr-line-bottom{
+      bottom: -50px;
+      height: 58px;
+    }
+    #curr-line-1{
+      height: 165px;
+      left: 160px;
+    }
+    #curr-line-2{
+      left: 286px;
+    }
+    #curr-line-3{
+      height: 143px;
+      left: 411px;
+    }
+    #curr-line-4{
+      left: 536px;
+    }
+    #curr-line-5{
+      height: 95px;
+      left: 661px;
+    }
+    #curr-line-6{
+      left: 784px;
     }
     .card-back{
       // display: none;

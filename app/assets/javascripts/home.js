@@ -41,4 +41,25 @@ $(function(){
     },200);
   })
 
+  // set listeners for the exponential diagram pieces
+  $diagram = $("#home-page #curriculum .curr-diagram");
+  $diagram.on("mouseenter","img", function(e){
+    $target = $(e.target);
+    $imgPiece = $target.parents(".img-piece");
+    console.log($imgPiece);
+    $(".curr-piece").each(function(){
+      console.log('piece');
+      if($(this).data("curr-piece") != $imgPiece.data("curr-piece")){
+        $(this).css("opacity",".15");
+      }
+    })
+  })
+  $diagram.on("mouseleave","img", function(e){
+    $(".curr-piece").each(function(){
+      $(this).css("opacity","");
+    })
+  })
+
+
+
 })

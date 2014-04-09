@@ -101,7 +101,7 @@
       </h2>
       <div class="clearfix"></div>
       <div class="weeks-top">
-        <div class="card-wrapper">
+        <div class="card-wrapper curr-piece" data-curr-piece="1">
           <div class="week">
             <div class="card-front">
               <h4>
@@ -121,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="card-wrapper">
+        <div class="card-wrapper curr-piece" data-curr-piece="3">
           <div class="week">
             <div class="card-front">
               <h4>
@@ -141,7 +141,7 @@
             </div>
           </div>
         </div>
-        <div class="card-wrapper">
+        <div class="card-wrapper curr-piece" data-curr-piece="5">
           <div class="week">
             <div class="card-front">
               <h4>
@@ -165,12 +165,35 @@
       <div class="clearfix"></div>
 
       <div class="curr-diagram">
-        <img src="#">
+        <div class="img-piece curr-piece" data-curr-piece="1">
+          <%= image_tag("home_page/piece1.png") %>
+        </div>
+        <div class="img-piece curr-piece" data-curr-piece="2">
+          <%= image_tag("home_page/piece2.png") %>
+        </div>
+        <div class="img-piece curr-piece" data-curr-piece="3">
+          <%= image_tag("home_page/piece3.png") %>
+        </div>
+        <div class="img-piece curr-piece" data-curr-piece="4">
+          <%= image_tag("home_page/piece4.png") %>
+        </div>
+        <div class="img-piece curr-piece" data-curr-piece="5">
+          <%= image_tag("home_page/piece5.png") %>
+        </div>
+        <div class="img-piece curr-piece" data-curr-piece="6">
+          <%= image_tag("home_page/piece6.png") %>
+        </div>
+        <div id="curr-line-1" class="curr-line curr-line-top curr-piece" data-curr-piece="1"></div>
+        <div id="curr-line-2" class="curr-line curr-line-bottom curr-piece" data-curr-piece="2"></div>
+        <div id="curr-line-3" class="curr-line curr-line-top curr-piece" data-curr-piece="3"></div>
+        <div id="curr-line-4" class="curr-line curr-line-bottom curr-piece" data-curr-piece="4"></div>
+        <div id="curr-line-5" class="curr-line curr-line-top curr-piece" data-curr-piece="5"></div>
+        <div id="curr-line-6" class="curr-line curr-line-bottom curr-piece" data-curr-piece="6"></div>
       </div>
 
       <div class="clearfix"></div>
       <div class="weeks-bottom">
-        <div class="card-wrapper">
+        <div class="card-wrapper curr-piece" data-curr-piece="2">
           <div class="week">
             <div class="card-front">
               <h4>
@@ -190,7 +213,7 @@
             </div>
           </div>
         </div>
-        <div class="card-wrapper">
+        <div class="card-wrapper curr-piece" data-curr-piece="4">
           <div class="week">
             <div class="card-front">
               <h4>
@@ -210,7 +233,7 @@
             </div>
           </div>
         </div>
-        <div class="card-wrapper">
+        <div class="card-wrapper curr-piece" data-curr-piece="6">
           <div class="week">
             <div class="card-front">
               <h4>
