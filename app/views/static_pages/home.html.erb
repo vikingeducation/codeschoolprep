@@ -445,20 +445,23 @@
         To find out more about the program and how you can get your students involved, leave your information below and we'll be in touch within hours.
       </h4>
       <div class="contact-form">
-        <form method="get">
+        <%= simple_form_for @inquiry do |f| %>
           <div class="input required">
-            <input type="text" placeholder="Your Name">
+            <%= show_inline_error(@inquiry, :name) %>
+            <%= f.input :name, :placeholder => "Your Name", :label => false %>
           </div>
           <div class="input required">
-            <input type="text" placeholder="Your Email Address">
+            <%= show_inline_error(@inquiry, :email) %>
+            <%= f.input :email, :placeholder => "Your Email", :label => false %>
           </div>
           <div class="input">
-            <textarea placeholder="Comments..."></textarea>
+            <%= show_inline_error(@inquiry, :comment) %>
+            <%= f.input :comment, :placeholder => "Comments...", :label => false %>
           </div>
           <div class="input">
             <input type="submit" value="Learn More">
           </div>
-        </form>
+        <% end %>
       </div>
       <div class="email-link">
         You can also contact us directly <a href="mailto:csp@theodinproject.com">via email</a>.
