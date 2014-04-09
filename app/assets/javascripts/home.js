@@ -29,16 +29,18 @@ $(function(){
     $target = $(e.target);
     $cardBack = $target.parents(".card-wrapper").find(".card-back");
     $cardBack.animate({
-      left: 0
-    },200);
+      // left: 0
+      top: 0
+    },100);
   });
   card.on("mouseleave",".how-card",function(e){
     $target = $(e.target);
     $cardBack = $target.parents(".card-wrapper").find(".card-back");
     $cardBack.clearQueue();
     $cardBack.animate({
-      left: -$cardBack.outerWidth()
-    },200);
+      // left: -$cardBack.outerWidth()
+      top: -$cardBack.outerHeight()
+    },100);
   })
 
   // set listeners for the exponential diagram pieces
