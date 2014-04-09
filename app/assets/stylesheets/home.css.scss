@@ -67,7 +67,7 @@ p{
   font-weight: 300;
 }
 p+p{
-  margin-top: .5em;
+  margin-top: .65em;
 }
 li{
   font-size: 1rem;
@@ -254,34 +254,40 @@ ol, ul{
     padding: $section-buffer 0px;
     .goal{
       display: block;
-      width: 90%;
+      // width: 90%;
+      max-width: 1000px;
       margin: 30px auto;
+      position: relative;
       // clear: both;s
       .goal-text{
-        width: 40%;
-        height: 150px;
+        // max-width: 400px;
+        min-width: 400px;
+        min-height: 150px;
+        padding: 10px 0 10px 20px;
         margin: 0 3%;
+        border-left: 3px solid $color-highlight;
         p{
-          margin: 10px;
+          margin-top: 10px;
+          line-height: 1.5em;
+          color: #666;
         }
       }
       .goal-image{
-        width: 40%;
-        height: 150px;
-        margin: 0 3%;
+        width: 400px;
+        height: 200px;
+        margin: 0px 50px 50px;
       }
       .float-left{
         float: left;
-        // margin: 0 2% 0 5%;
       }
       .float-right{
-        float: left; //HA!
-        // margin: 0 5% 0 2%;
+        float: right;
       }
       img{
-        border: 1px solid gray;
+        padding-top: 10px;
         height: 100%;
         width: 100%;
+        opacity: .1;
       }
     }
   }
@@ -502,21 +508,30 @@ ol, ul{
       color: $color-blue-green;
     }
     .info-box{
-      padding: 30px 0;
+      padding: 0px 0;
+      // border-top: 3px solid $color-highlight-border;
+      // border-bottom: 3px solid $color-highlight-border;
       img{
-        width: 216px;
-        height: 216px;
-        margin: 0px 40px 20px 60px;
+        width: 256px;
+        height: 256px;
+        margin: 20px 40px 10px 60px;
         padding: 10px;
+        display: inline-block;
         float: left;
       }
       p{
-        font-size: 1.15em;
-        // margin: 1em;
-        font-weight: 300;
+        font-size: 1.5rem;
+        font-weight: 100;
         color: #666;
-        margin-left: 60px;
+        line-height: 1.35em;
+        letter-spacing: 1px;
       }
+    }
+    .info-text{
+      // display: inline-block;
+      padding: 20px;
+      width: 100%;
+      // max-width: 620px;
     }
   }
 
@@ -526,17 +541,24 @@ ol, ul{
       text-align: center;
     }
     h4{
-      font-weight: 700;
+      font-weight: 500;
+      font-size: 1.5rem;
       color: $color-blue-green;
     }
     p{
-      margin: 1em 0;
+      margin: 20px 20px;
+      font-size: 1.5rem;
+      line-height: 1.35em;
       color: #666;
+      font-weight: 100;
+      // letter-spacing: 1px;
     }
     li{
-      font-weight: 300;
+      font-weight: 100;
       color: #666;
+      font-size: 1.5rem;
       strong{
+        font-weight: 400;
         color: $color-blue-green;
       }
     }
@@ -556,10 +578,10 @@ ol, ul{
     h4{
       max-width: 700px;
       margin: 50px auto;
-      padding-left: 20px;
+      padding-left: 50px;
       text-decoration: italic;
       font-weight: 300;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       line-height: 1.5em;
       color: $color-highlight;      
     }

@@ -62,7 +62,10 @@
   <div id="goals" class="section">
     <div class="container">
       <div class="goal">
-        <div class="goal-text float-left">
+        <div class="goal-image float-right">
+          <%= image_tag("home_page/men.png") %>
+        </div>
+        <div class="goal-text">
           <h3>
             Our Mission
           </h3>
@@ -71,16 +74,13 @@
 
           </p>
         </div>
-        <div class="goal-image float-right">
-          <img src="#">
-        </div>
         <div class="clearfix"></div>
       </div>
       <div class="goal">
-        <div class="goal-image float-left">
-          <img src="#">
+        <div class="goal-image float-right">
+          <%= image_tag("home_page/laptop.jpg") %>
         </div>
-        <div class="goal-text float-right">
+        <div class="goal-text">
           <h3>
             Our Methods
           </h3>
@@ -383,15 +383,17 @@
       </h2>
       <div class="info-box">
         <%= image_tag("home_page/erik-256.jpg") %>
-        <p>
-          <strong>Erik Trautman</strong> has taught hundreds of students how to code and is highly experienced with virtual teaching.
-        </p>
-        <p>
-          He's a graduate of Penn's School of Engineering and a former student at App Academy, a premier coding school in San Francisco.  He stayed on with App Academy after graduating their program but left in May 2013 to found <a href="http://theodinproject.com" target="_blank">The Odin Project</a>, an open source curriculum for learning web development online. 
-        </p>
-        <p>
-          He currently coordinates dozens of remote student developers who contribute to the project and also heads the <a href="http://codingschoolalumni.org">Coding School Alumni Association</a>, a social and professional network of graduates of fulltime intensive coding schools worldwide.
-        </p>
+        <div class="info-text">
+          <p>
+            <strong>Erik Trautman</strong> has taught hundreds of students how to code and is highly experienced with virtual teaching.
+          </p>
+          <p>
+            He's a graduate of Penn's School of Engineering and a former student at App Academy, a premier coding school in San Francisco.  He stayed on with App Academy after graduating their program but left in May 2013 to found <a href="http://theodinproject.com" target="_blank">The Odin Project</a>, an open source curriculum for learning web development online. 
+          </p>
+          <p>
+            He currently coordinates dozens of remote student developers who contribute to the project and also heads the <a href="http://codingschoolalumni.org">Coding School Alumni Association</a>, a social and professional network of graduates of fulltime intensive coding schools worldwide.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -400,7 +402,7 @@
   <div id="faq" class="section">
     <div class="container-narrow">
       <h2>
-        FAQ
+        Frequently Asked Questions
       </h2>
       <div class="faq-question">
         <h4>
