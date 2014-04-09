@@ -1,8 +1,8 @@
 /* NOTES
 
 * Need a container with a max width for all except the logo
-* Breakpoint: curriculum section 900px goes mobile (back side of card stacks under the card, all cards centered and stacked)
-
+* Breakpoint: curriculum section 900px goes mobile (back side of card stacks under the card, still blue, all cards centered and stacked)
+* Need the goals and methods section to degrade gracefully
 */
 
 
@@ -501,7 +501,8 @@ ol, ul{
       p{
         font-size: 1.35em;
         // margin: 1em;
-        color: #666;
+        font-weight: 300;
+        color: #888;
         margin-left: 60px;
       }
     }
@@ -518,6 +519,14 @@ ol, ul{
     }
     p{
       margin: 1em 0;
+      color: #888;
+    }
+    li{
+      font-weight: 300;
+      color: #888;
+      strong{
+        color: $color-blue-green;
+      }
     }
     .faq-question{
       margin: 40px;
