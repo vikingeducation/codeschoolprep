@@ -554,15 +554,20 @@ ol, ul{
       text-align: center;
     }
     h4{
-      max-width: 500px;
-      margin: 30px auto;
+      max-width: 700px;
+      margin: 50px auto;
+      padding-left: 20px;
       text-decoration: italic;
       font-weight: 300;
+      font-size: 1.75rem;
+      line-height: 1.5em;
+      color: $color-highlight;      
     }
     form{
       display: block;
       max-width: 500px;
       margin: auto;
+      padding-right: 30px;
     }
     .input{
       display: block;
@@ -578,19 +583,21 @@ ol, ul{
     }
     input{
       font-size: 1.5rem;
-      width: 500px;
+      max-width: 500px;
       height: 30px;
       padding: 5px 15px;
     }
     textarea{
       font-size: 1.5rem;
-      width: 500px;
+      width: 100%;
+      max-width: 500px;
       height: 200px;
       padding: 5px 15px;
     }
     input[type="submit"]{
       @extend .button;
-      width: 532px;
+      width: 110%;
+      max-width: 532px;
       height: 60px;
       padding: 5px 15px;
       color: white;
