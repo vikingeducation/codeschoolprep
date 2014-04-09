@@ -551,12 +551,13 @@ ol, ul{
       line-height: 1.35em;
       color: #666;
       font-weight: 100;
-      // letter-spacing: 1px;
+      letter-spacing: 1px;
     }
     li{
       font-weight: 100;
       color: #666;
       font-size: 1.5rem;
+      letter-spacing: 1px;
       strong{
         font-weight: 400;
         color: $color-blue-green;
