@@ -10,7 +10,7 @@ $(function(){
     $weekBack = $target.parents(".card-wrapper").find(".card-back");
     $weekBack.animate({
       left: 0
-    },200);
+    },150);
   });
   week.on("mouseleave",".week",function(e){
     $target = $(e.target);
@@ -18,7 +18,26 @@ $(function(){
     $weekBack.clearQueue();
     $weekBack.animate({
       left: -$weekBack.outerWidth()
-    },200);
+    },150);
+  })
+
+  // set listeners for the exponential diagram pieces
+  $diagram = $("#home-page #curriculum .curr-diagram");
+  $diagram.on("mouseenter","img", function(e){
+    $target = $(e.target);
+    $imgPiece = $target.parents(".img-piece");
+    console.log($imgPiece);
+    $(".curr-piece").each(function(){
+      console.log('piece');
+      if($(this).data("curr-piece") != $imgPiece.data("curr-piece")){
+        $(this).css("opacity",".15");
+      }
+    })
+  })
+  $diagram.on("mouseleave","img", function(e){
+    $(".curr-piece").each(function(){
+      $(this).css("opacity","");
+    })
   })
 
 
@@ -41,25 +60,6 @@ $(function(){
       // left: -$cardBack.outerWidth()
       top: -$cardBack.outerHeight()
     },100);
-  })
-
-  // set listeners for the exponential diagram pieces
-  $diagram = $("#home-page #curriculum .curr-diagram");
-  $diagram.on("mouseenter","img", function(e){
-    $target = $(e.target);
-    $imgPiece = $target.parents(".img-piece");
-    console.log($imgPiece);
-    $(".curr-piece").each(function(){
-      console.log('piece');
-      if($(this).data("curr-piece") != $imgPiece.data("curr-piece")){
-        $(this).css("opacity",".15");
-      }
-    })
-  })
-  $diagram.on("mouseleave","img", function(e){
-    $(".curr-piece").each(function(){
-      $(this).css("opacity","");
-    })
   })
 
 
