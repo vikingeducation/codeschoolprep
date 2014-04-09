@@ -9,7 +9,7 @@
 
 $font-headline: Lato, Helvetica, sans-serif;
 $font-body: "helvetica neue", Helvetica, sans-serif;
-$section-buffer: 80px;
+$section-buffer: 100px;
 
 /* COLORS */
 $color-highlight: #0298F5;
@@ -40,9 +40,10 @@ h1{
 }
 h2{
   font-family: $font-headline;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 500;
   line-height: 1.25em;
+  margin-bottom: 1.25em;
 }
 h3{
   font-family: $font-headline;
@@ -153,7 +154,8 @@ ol, ul{
 /* HOME PAGE STYLES */
 
 .section{
-  border-bottom: 1px solid #eee;
+  // border-bottom: 1px solid #eee;
+  border-bottom: 3px solid $color-blue-green;
   position: relative;
   clear: both;
 }
@@ -230,7 +232,7 @@ ol, ul{
   }
 
   #reinforcer{
-    padding: $section-buffer 0px;
+    padding: 80px 0px;
     background: image-url('patterns/dk-blue-hatch.png');
     color: white;
 
@@ -249,7 +251,7 @@ ol, ul{
   }
 
   #goals{
-    padding: $section-buffer/2 0px;
+    padding: $section-buffer 0px;
     .goal{
       display: block;
       width: 90%;
@@ -421,9 +423,11 @@ ol, ul{
       width: 800px;
       margin: 30px auto;
       p{
-        font-size: 1.25rem;
-        color: #888;
-        font-weight: 300;
+        font-size: 1.5rem;
+        color: #666;
+        font-weight: 100;
+        line-height: 1.35em;
+        letter-spacing: 1px;
       }
     }
     .card-holder{
@@ -498,18 +502,19 @@ ol, ul{
       color: $color-blue-green;
     }
     .info-box{
-      padding: 60px 0;
+      padding: 30px 0;
       img{
-        width: 144px;
-        height: 144px;
+        width: 216px;
+        height: 216px;
         margin: 0px 40px 20px 60px;
+        padding: 10px;
         float: left;
       }
       p{
-        font-size: 1.35em;
+        font-size: 1.15em;
         // margin: 1em;
         font-weight: 300;
-        color: #888;
+        color: #666;
         margin-left: 60px;
       }
     }
@@ -526,11 +531,11 @@ ol, ul{
     }
     p{
       margin: 1em 0;
-      color: #888;
+      color: #666;
     }
     li{
       font-weight: 300;
-      color: #888;
+      color: #666;
       strong{
         color: $color-blue-green;
       }
