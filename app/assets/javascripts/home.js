@@ -37,7 +37,7 @@ $(function(){
     $cardBack = $target.parents(".card-wrapper").find(".card-back");
     $cardBack.clearQueue();
     $cardBack.animate({
-      left: -$cardBack.outerWidth()+10
+      left: -$cardBack.outerWidth()
     },200);
   })
 

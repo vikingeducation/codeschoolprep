@@ -429,12 +429,13 @@ ol, ul{
       margin: auto;
     }
     .how-content{
-      width: 500px;
+      width: 480px;
+      margin-left: 20px;
       // display: inline-block;
       float: left;
     }
     .how-support{
-      width: 500px;
+      width: 480px;
       // display: inline-block;
       float: left;
     }
@@ -442,22 +443,25 @@ ol, ul{
       width: 400px;
       margin: 30px auto;
       height: 150px;
-      border: 1px solid #ddd;
+      // border: 1px solid #ddd;
+      // border-left: 5px solid $color-highlight;
       position: relative;
       overflow: hidden;
     }
     .card-front{
       // padding: 20px;
       img{
-        margin: 0 20px 0 30px;
-        height: 110px;
-        width: 110px;
-        border: 1px solid gray;
+        margin: 16px 20px 0 30px;
+        height: 50px;
+        width: 50px;
+        // border: 1px solid gray;
+        opacity: .35;
         float: left;
       }
       h4{
         margin: 20px;
         font-size: 1.5rem;
+        padding-top: 10px;
         // padding-top: 1em;
         font-weight: 300;
       }
@@ -469,7 +473,7 @@ ol, ul{
       // padding: 25px;/
       position: absolute;
       top: 0px;
-      left: -390px;
+      left: -400px;
       color: white;
       background-color: $color-highlight;
       p{
@@ -493,8 +497,8 @@ ol, ul{
     .info-box{
       padding: 60px 0;
       img{
-        width: 200px;
-        height: 200px;
+        width: 144px;
+        height: 144px;
         margin: 0px 40px 20px 60px;
         float: left;
       }
