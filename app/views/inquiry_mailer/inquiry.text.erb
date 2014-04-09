@@ -1,0 +1,9 @@
+Inquiry for Code School Prep
+
+From <%= @inquiry.name %> at <%= link_to @inquiry.email, "mailto:#{@inquiry.email}" %>, it says:
+
+<% if @inquiry.comment.blank? %>
+  (no content)
+<% else %>
+  <%= @inquiry.comment %>
+<% end %>

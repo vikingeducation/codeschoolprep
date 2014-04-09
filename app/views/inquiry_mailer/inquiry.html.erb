@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Inquiry for Code School Prep</h1>
+    <h3>From <%= @inquiry.name %> at <%= link_to @inquiry.email, "mailto:#{@inquiry.email}" %>, it says:</h3>
+    <p>
+      <% if @inquiry.comment.blank? %>
+        (no content)
+      <% else %>
+        <%= @inquiry.comment %>
+      <% end %>
+    </p>
+
+  </body>
+</html>

@@ -19,6 +19,9 @@ Codeschoolprep::Application.configure do
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
+  # Use the letter_opener gem to display dev emails in the browser window
+  config.action_mailer.delivery_method = :letter_opener
+
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
 

@@ -5,6 +5,7 @@ class InquiriesController < ApplicationController
     @inquiry = Inquiry.new(inquiry_params)
     if @inquiry.save
       puts "INQUIRY SAVED"
+      InquiryMailer.inquiry(@inquiry).deliver!
       flash[:success] = "Thank you for your interest.  We'll be in touch shortly!"
       redirect_to :root
     else
